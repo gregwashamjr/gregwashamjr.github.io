@@ -507,6 +507,10 @@
 /*** footer End ***/
 
 
-.custom-green {
-    background-color: #2c5e4f;
+#pigraHome .col-lg-3 {
+    background-color: #1f4a3f !important;
+}
+
+#pigraHome .col-lg-3 .bg-dark {
+    background: none !important;
 }
