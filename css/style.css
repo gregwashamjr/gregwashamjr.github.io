@@ -507,39 +507,6 @@
 /*** footer End ***/
 
 
-.text-primary {
-    color: #2f6f5e !important;
-}
-
-.btn-primary {
-    background-color: #2f6f5e !important;
-    border-color: #2f6f5e !important;
-    color: #ffffff !important;
-}
-
-.btn-primary:hover {
+.header-content.bg-dark {
     background-color: #285f51 !important;
-    border-color: #285f51 !important;
-    color: #ffffff !important;
 }
-
-.bg-primary {
-    background-color: #2f6f5e !important;
-}
-
-.nav-section .navbar .navbar-nav .nav-item:hover {
-    color: #2f6f5e !important;
-}
-
-.nav-section .navbar .navbar-nav .nav-item.active {
-    color: #2f6f5e !important;
-}
-
-.fa,
-.fas,
-.fab,
-.bi {
-    color: inherit;
-}
-
-
