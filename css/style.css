@@ -1,3 +1,6 @@
+:root {
+    --bs-primary: #285f51;
+}
 
 /*** Spinner Start ***/
 #spinner {
