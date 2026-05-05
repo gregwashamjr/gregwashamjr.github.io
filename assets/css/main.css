@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #555555; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #333333; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #000000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #007bff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -3463,4 +3463,48 @@ section .hero {
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*--------------------------------------------------------------
+# Custom Skills Section Styles
+--------------------------------------------------------------*/
+.skills-card {
+  background: var(--surface-color);
+  padding: 30px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  /* Uses your brand's accent color for the top border */
+  border-top: 4px solid var(--accent-color); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.skills-card h4 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--heading-color);
+}
+
+.skills-card h4 i {
+  color: var(--accent-color);
+}
+
+.skills-card ul li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.skills-card ul li strong {
+  color: var(--heading-color);
+  font-weight: 500;
 }
