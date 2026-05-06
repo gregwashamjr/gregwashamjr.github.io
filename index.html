@@ -435,60 +435,73 @@
   <div class="row gy-4 portfolio-container justify-content-center">
 
     <!-- Project 1: Healthcare Efficiency -->
-    <div class="col-lg-5 col-md-6 portfolio-item">
-      <div class="portfolio-card">
-        <div class="image-container">
-          <img src="assets/img/portfolio/sad diabetic.jpg" class="img-fluid" alt="Healthcare Data Analysis" loading="lazy">
-          <div class="overlay">
-            <div class="overlay-content">
-              <a href="https://public.tableau.com/app/profile/greg.washam/viz/DiabetesDataAnalysis_17775820265220/HospitalReadmissionAnalysisIdentifyingHigh-RiskFactorsforDiabeticPatients_#1" class="zoom-link" title="View Tableau Dashboard">
-                <i class="bi bi-graph-up"></i>
-              </a>
-              <!-- 2. ADD THIS NEW LINK: This goes to your HTML details page -->
-              <a href="portfolio-details-diabetes.html" class="details-link" title="Read Case Study">
-               <i class="bi bi-file-earmark-text"></i>
-              </a>
-              <a href="https://github.com/gregwashamjr/diabetes-data" class="details-link" title="View SQL Code">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content p-3">
-          <h4>Healthcare Efficiency Analysis</h4>
-          <p class="text-muted small">SQL | BigQuery | Tableau</p>
+<div class="col-lg-5 col-md-6 portfolio-item">
+  <div class="portfolio-card">
+    <div class="image-container">
+      <img src="assets/img/portfolio/sad diabetic.jpg" class="img-fluid" alt="Healthcare Data Analysis">
+      <div class="overlay">
+        <div class="overlay-content">
+          
+          <!-- 1. Tableau Link (Added 'non-glightbox' to stop the zooming) -->
+          <a href="https://public.tableau.com/app/profile/greg.washam/viz/DiabetesDataAnalysis_17775820265220/HospitalReadmissionAnalysisIdentifyingHigh-RiskFactorsforDiabeticPatients_#1" class="zoom-link non-glightbox" target="_blank" title="View Tableau Dashboard">
+            <i class="bi bi-graph-up"></i>
+          </a>
+
+          <!-- 2. Case Study Link (Points to your HTML page) -->
+          <a href="portfolio-details.html" class="details-link non-glightbox" title="Read Case Study">
+            <i class="bi bi-file-earmark-text"></i>
+          </a>
+
+          <!-- 3. GitHub Link -->
+          <a href="https://github.com/gregwashamjr/diabetes-data" class="details-link non-glightbox" target="_blank" title="View SQL Code">
+            <i class="bi bi-github"></i>
+          </a>
+
         </div>
       </div>
-    </div><!-- End Project 1 -->
+    </div>
+    <div class="portfolio-content p-3">
+      <h4>Healthcare Efficiency Analysis</h4>
+      <p class="text-muted small">SQL | BigQuery | Tableau</p>
+      <p class="mt-2">Analyzing 100k+ hospital records to identify clinical risk factors and trends in patient readmission.</p>
+    </div>
+  </div>
+</div>
 
     <!-- Project 2: Insurance Analysis -->
-    <div class="col-lg-5 col-md-6 portfolio-item">
-      <div class="portfolio-card">
-        <div class="image-container">
-          <img src="assets/img/portfolio/ins.png" class="img-fluid" alt="Insurance Coverage Analysis" loading="lazy">
-          <div class="overlay">
-            <div class="overlay-content">
-              <a href="https://public.tableau.com/app/profile/greg.washam/viz/ThirdPartyPayerReimbursementAnalysis/ThirdPartyPayerReimbursement" class="zoom-link" title="View Tableau Dashboard">
-                <i class="bi bi-graph-up"></i>
-              </a>
-              <!-- 2. ADD THIS NEW LINK: This goes to your HTML details page -->
-              <a href="portfolio-details-ins.html" class="details-link" title="Read Case Study">
-                <i class="bi bi-file-earmark-text"></i>
-              </a>
-              <a href="https://github.com/gregwashamjr/healthcare-cost-analysis" class="details-link" title="View GitHub Repo">
-                <i class="bi bi-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content p-3">
-          <h4>Payer Reimbursement Analysis</h4>
-          <p class="text-muted small">SQL | Tableau | Revenue Cycle</p>
+<div class="col-lg-5 col-md-6 portfolio-item">
+  <div class="portfolio-card">
+    <div class="image-container">
+      <img src="assets/img/portfolio/ins.png" class="img-fluid" alt="Insurance Coverage Analysis" loading="lazy">
+      <div class="overlay">
+        <div class="overlay-content">
+          
+          <!-- 1. Tableau Link (Added 'non-glightbox' and target='_blank') -->
+          <a href="https://public.tableau.com/app/profile/greg.washam/viz/ThirdPartyPayerReimbursementAnalysis/ThirdPartyPayerReimbursement" class="zoom-link non-glightbox" target="_blank" title="View Tableau Dashboard">
+            <i class="bi bi-graph-up"></i>
+          </a>
+
+          <!-- 2. Case Study Link (Points to your second details page) -->
+          <a href="portfolio-details-ins.html" class="details-link non-glightbox" title="Read Case Study">
+            <i class="bi bi-file-earmark-text"></i>
+          </a>
+
+          <!-- 3. GitHub Link (Added 'non-glightbox' and target='_blank') -->
+          <a href="https://github.com/gregwashamjr/healthcare-cost-analysis" class="details-link non-glightbox" target="_blank" title="View GitHub Repo">
+            <i class="bi bi-github"></i>
+          </a>
+
         </div>
       </div>
-    </div><!-- End Project 2 -->
-
-  </div><!-- End Portfolio Row -->
+    </div>
+    <div class="portfolio-content p-3">
+      <h4>Payer Reimbursement Analysis</h4>
+      <p class="text-muted small">SQL | Tableau | Revenue Cycle</p>
+      <!-- Added a short description for consistency with Project 1 -->
+      <p class="mt-2">Evaluating 10 years of hospital data to identify trends in payer efficiency and insurance reimbursement rates.</p>
+    </div>
+  </div>
+</div><!-- End Project 2 -->
 </div>
 
           <!-- Project 3: Coming Soon -->
