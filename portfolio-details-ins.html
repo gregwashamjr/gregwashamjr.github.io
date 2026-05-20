@@ -5,6 +5,250 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Project Details - Greg Washam Portfolio</title>
+  <meta name="description" content="Healthcare Data Analytics Project: Medical Appointment No-Show Analysis">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@300;400;500;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Greg Washam</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" style="padding: 40px 0; background: #f8f9fa;">
+      <div class="container text-center">
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center" style="background: transparent;">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Project Details</li>
+          </ol>
+        </nav>
+
+        <h1 style="font-weight: 700;">Third-Party Payer Reimbursement Analysis</h1>
+
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details" style="padding: 60px 0;">
+
+      <div class="container">
+
+        <!-- Intro -->
+        <div class="row text-center mb-5">
+          <div class="col-lg-12">
+
+            <h2 style="color: #007bff; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;">
+              Project Overview
+            </h2>
+
+            <h3 style="font-size: 2.5rem; margin-bottom: 20px;">
+              Identifying Payer Behavior Between Encounter Types
+            </h3>
+
+            <p class="mx-auto" style="max-width: 800px; font-size: 1.1rem; color: #555;">
+              This project analyzes hospital encounter data to evaluate how different payers cover the cost of care. The analysis focuses on comparing payer performance based on the percentage of costs they reimburse. By examining payer behavior this project highlights patterns in healthcare spending and reveals where to focus efforts to increase reimbursements, thus decreasing patient burden.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Main Dashboard Image -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10">
+
+            <div class="shadow-lg rounded overflow-hidden bg-light" style="min-height: 300px; border: 1px solid #eee;">
+
+              <!-- Replace image path with your actual screenshot -->
+              <img src="assets/img/portfolio/ins dashboard.png" alt="No-Show Analysis Dashboard" class="img-fluid">
+
+              <div class="p-3 text-center text-muted small">
+                Tableau Dashboard: Healthcare Cost & Insurance Coverage Analysis
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Content Row -->
+        <div class="row gy-4">
+
+          <!-- Left Content -->
+          <div class="col-lg-8">
+
+            <div class="content-box p-4">
+
+              <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                The Challenge
+              </h4>
+
+              <p class="mt-3">
+                The analysis required integrating multiple tables across payer, claim, and reimbursement sources, reinforcing a structured approach to building a reliable data model. A large share of payers showed near-zero reimbursement, which helped sharpen focus on meaningful segments and improved the clarity of comparative insights. While the dataset could not be externally validated, this was addressed through careful internal consistency checks and conservative interpretation of results to ensure trustworthy, directionally sound findings.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Analytical Approach
+              </h4>
+
+              <p class="mt-3">
+                Using SQL for data preparation and <strong>Tableau</strong> for visualization, I analyzed the reimburesment behaviors of 8 major third party payers as it realted to encounter types. The dashboard was designed to highlight the payers the reimburse the least and the least reimbursed encouter types.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Key Insights
+              </h4>
+
+              <p class="mt-3">
+                - Medicare accounted for the largest reimbursement volume → $19M
+                - Insurace coverage varied from payer to payer, collection average → 60%
+                - Ambulatory encounters generated the highest total billed amount → $23.7M
+                - Urgent care visits demonstrated the highest encounter-level coverage rate → 78%
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Recommendations
+              </h4>
+
+              <p class="mt-3">
+                - Prioritize High-Volume Payers: Focus revenue cycle optimization efforts on Medicare and Medicaid claims, as these payers represent the largest reimbursement volumes and greatest financial impact.
+                - Review Underperforming Payer Contracts: Investigate commercial insurance plans with low reimbursement coverage rates to identify potential issues related to contracts, claim denials, or reimbursement structures.
+                - Improve Ambulatory Reimbursement Efficiency: Since ambulatory encounters generate the highest billing volume, improving coding accuracy, documentation quality, and claim submission processes in this service could significantly increase reimbursement performance.
+                - Monitor Encounter-Level Profitability: Track reimbursement efficiency across encounter types to better understand which services generate the strongest financial return and where operational improvements may be needed.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="col-lg-4">
+
+            <div class="p-4 rounded" style="background: #f0f7ff; border-left: 5px solid #007bff;">
+
+              <h4 style="font-size: 1.1rem; font-weight: 700;">
+                Project Tech Stack
+              </h4>
+
+              <ul class="list-unstyled mt-3">
+
+                <li class="mb-2">
+                  <i class="bi bi-check2-circle text-primary me-2"></i>
+                  <strong>Database:</strong> PostgreSQL
+                </li>
+
+                <li class="mb-2">
+                  <i class="bi bi-check2-circle text-primary me-2"></i>
+                  <strong>Visualization:</strong> Tableau
+                </li>
+
+                <li class="mb-2">
+                  <i class="bi bi-check2-circle text-primary me-2"></i>
+                  <strong>Version Control:</strong> GitHub
+                </li>
+
+                <li class="mb-2">
+                  <i class="bi bi-check2-circle text-primary me-2"></i>
+                  <strong>Tools:</strong> VS Code
+                </li>
+
+              </ul>
+
+              <hr>
+
+              <!-- Replace with your actual GitHub repo -->
+              <a href="https://github.com/gregwashamjr/healthcare-cost-analysis" class="btn btn-primary w-100 mt-2">
+                View Code on GitHub
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/greg-washam-49952035b/">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/">
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details - Greg Washam Portfolio</title>
   <meta name="description" content="Healthcare Data Analytics Project: Hospital Efficiency and Risk Analysis">
 
   <!-- Favicons -->

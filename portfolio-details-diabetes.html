@@ -85,35 +85,52 @@
         </div>
       </div>
 
-      <div class="row gy-4">
-        <!-- Left Side: Detail Text -->
-        <div class="col-lg-8">
-          <div class="content-box p-4">
-            <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">The Challenge</h4>
-            <p class="mt-3">Processing a high-volume, "messy" healthcare dataset required significant cleaning, handling vertical data formats, and type-casting in <strong>PostgreSQL</strong> to ensure data integrity.</p>
+      <!-- Content Row -->
+        <div class="row gy-4">
 
-            <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">Clinical Approach</h4>
-            <p class="mt-3">Leveraging my <strong>Doctor of Chiropractic</strong> background, I engineering clinical features—such as identifying emergency vs. elective admission impacts—to ensure the model's findings remained medically relevant.</p>
+          <!-- Left Content -->
+          <div class="col-lg-8">
+
+            <div class="content-box p-4">
+
+              <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                The Challenge
+              </h4>
+
+              <p class="mt-3">
+                This data was missing about 50% of the referring specialist type data. I categorized the missing data as "other" or "Unknown" to avoid skewing the specialty benchmarking
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Analytical Approach
+              </h4>
+
+              <p class="mt-3">
+                Using Excel for data cleaning, SQL for data preparation, and <strong>Tableau</strong> for visualization, I analyzed factors contributing to increased hospital readmission rates. Areas explored included specialist referral type, primary diagnosis, comorbidities, and medication management. After identifying key patterns and trends, I focused on controllable variables that could help reduce readmission rates and improve patient outcomes.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Key Insights
+              </h4>
+
+              <p class="mt-3">
+                The analysis revealed an overall patient readmission rate of 11.2%; however, patients diagnosed with diabetes experienced a higher readmission rate of 13.1%. That rate increased further to 15% among diabetes patients who did not receive a medication change upon discharge. Medication changes included either prescribing new diabetes medication or adjusting existing prescriptions. Another notable finding was that patients referred through Cardiology had a significantly lower readmission rate of 8%.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Recommendations
+              </h4>
+
+              <p class="mt-3">
+                To reduce the 15% risk identified in the "Treatment Gap," the hospital should implement a mandatory medication review for all diabetic patients prior to discharge, specifically targeting those whose prescriptions remained unchanged during their stay. 
+              </p>
+              <p class="mt-3">
+                The hospital should also implement and evaluate Cardiology’s discharge and follow-up protocols across other clinical departments to help reduce hospital-wide readmission rates. Since Cardiology consistently achieves below-average readmission rates, even among high-risk patients, its care coordination strategies may serve as an effective model for improving outcomes in other specialties.
+              </p>
+
+            </div>
+
           </div>
-        </div>
-
-        <!-- Right Side: Quick Stats -->
-        <div class="col-lg-4">
-          <div class="p-4 rounded" style="background: #f0f7ff; border-left: 5px solid #007bff;">
-            <h4 style="font-size: 1.1rem; font-weight: 700;">Project Tech Stack</h4>
-            <ul class="list-unstyled mt-3">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <strong>Database:</strong> PostgreSQL</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <strong>Visuals:</strong> Tableau</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <strong>Version Control:</strong> GitHub</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i> <strong>Tools:</strong> VS Code</li>
-            </ul>
-            <hr>
-            <a href="https://github.com/" class="btn btn-primary w-100 mt-2">View Code on GitHub</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </section>
 
 </main>
@@ -121,11 +138,11 @@
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright text-center">
-        <p>© <span>Copyright</span> <strong class="px-1">Greg Washam</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1">MinimalFolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://https://www.linkedin.com/in/greg-washam-49952035b/"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/"><i class="bi bi-github"></i></a>
+        <a href="https://https://www.linkedin.com/in/greg-washam-49952035b/ "><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/gregwashamjr"><i class="bi bi-github"></i></a>
       </div>
     </div>
   </footer>
