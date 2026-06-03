@@ -59,7 +59,7 @@
           </ol>
         </nav>
 
-        <h1 style="font-weight: 700;">Medical Appointment No-Show Analysis</h1>
+        <h1 style="font-weight: 700;">Reducing Missed Appointments Through Scheduling and Communication Improvements</h1>
 
       </div>
     </div>
@@ -78,7 +78,7 @@
             </h2>
 
             <h3 style="font-size: 2.5rem; margin-bottom: 20px;">
-              Identifying Drivers of Missed Medical Appointments
+              Healthcare Operations Case Study
             </h3>
 
             <p class="mx-auto" style="max-width: 800px; font-size: 1.1rem; color: #555;">
@@ -87,6 +87,128 @@
 
           </div>
         </div>
+
+         <!-- Content Row -->
+        <div class="row gy-4">
+
+          <!-- Left Content -->
+          <div class="col">
+
+            <div class="content-box p-4">
+
+              <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                The Problem
+              </h4>
+
+              <p class="mt-3">
+                Missed appointments create scheduling inefficiencies, reduce patient access to care, and negatively impact organizational performance.
+              </p>
+              <p class="mt-3">
+                The goal of this project was to identify the factors most strongly associated with appointment no-shows and recommend interventions that could improve attendance rates.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Why It Matters
+              </h4>
+
+              <p class="mt-3">
+               Even small improvements in reimbursement efficiency can have significant financial impacts.
+              </p>
+              
+              <p class="mt-3"></p>
+                Reducing no-show rates benefits both patients and healthcare organizations.
+              </p>
+
+              <p class="mt-3">
+                Improved attendance increases provider utilization, reduces scheduling gaps, and helps ensure patients receive timely care.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Data Considerations
+              </h4>
+
+              <p class="mt-3">
+                Patient attendance behavior is influenced by multiple factors, including communication preferences, scheduling characteristics, and demographic variables.
+              </p>
+
+              <p class="mt-3"></p>
+                The analysis focused on identifying actionable factors that organizations could realistically address through process improvements.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Investigation
+              </h4>
+
+              <p class="mt-3">
+                To better understand appointment attendance patterns, I analyzed patient demographics, scheduling data, communication methods, and prior attendance behavior.
+              </p>
+
+              <p class="mt-3">
+                The goal was to identify operational drivers of missed appointments and uncover opportunities for intervention.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Key Findings
+              </h4>
+
+              <ul class="mt-3">
+                <li>Only 25.6% of patients were enrolled in SMS appointment reminders.</li>
+                <li>SMS reminder enrollment was associated with improved attendance rates.</li>
+                <li>Longer appointment lead times increased no-show risk.</li>
+                <li>Patients aged 18–29 demonstrated the highest no-show rates.</li>
+                <li>Previous attendance behavior provided useful indicators of future appointment adherence.</li>
+              </ul>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Recommendations
+              </h4>
+
+              <h5 class="mt-4 insight-title">Expand SMS Reminder Enrollment</h5>
+                
+
+              <p class="mt-3">
+                Increase enrollment efforts to improve patient engagement and appointment adherence.
+              </p>
+
+              <h5 class="mt-4 insight-title">Reduce Scheduling Lead Times</h5>
+                
+              
+              <p class="mt-3">
+               When possible, minimize delays between scheduling and appointment dates.
+              </p>
+
+              <h5 class="mt-4 insight-title">Implement Targeted Outreach</h5>
+              
+              
+              <p class="mt-3">
+                Develop communication strategies specifically for high-risk patient populations.
+              </p>
+
+              <h5 class="mt-4 insight-title">Increase Reminder Frequency</h5>
+              
+              
+              <p class="mt-3">
+                Provide additional reminders for appointments scheduled further into the future.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Potential Impacts
+              </h4>
+
+              <p class="mt-3">
+                The analysis estimated that increasing SMS enrollment could reduce the overall no-show rate from approximately 19.5% to 15%.
+              </p>
+
+              <p class="mt-3">
+                These improvements could increase provider utilization, improve patient access, and create measurable operational efficiencies.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Dashboard and Supporting Visualizations
+              </h4>
+            </div>
+          </div>
+    
 
         <!-- Main Dashboard Image -->
         <div class="row justify-content-center mb-5">
@@ -98,7 +220,7 @@
               <img src="assets/img/portfolio/no-show-dashboard.png" alt="No-Show Analysis Dashboard" class="img-fluid">
 
               <div class="p-3 text-center text-muted small">
-                Tableau Dashboard: Medical Appointment No-Show Analysis
+                Figure 1. Dashboard used to evaluate communication, scheduling, and demographic factors associated with appointment attendance.
               </div>
 
             </div>
@@ -106,102 +228,66 @@
           </div>
         </div>
 
-        <!-- Content Row -->
-        <div class="row gy-4">
-
+        
           <!-- Left Content -->
-          <div class="col-lg-8">
+    <div class="col-lg-8">
 
-            <div class="content-box p-4">
+        <div class="content-box p-4">
 
-              <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
-                The Challenge
-              </h4>
+            <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                What I Learned
+            </h4>
 
-              <p class="mt-3">
-                Healthcare appointment data often contains inconsistent scheduling patterns, missing demographic information, and operational noise. This project focused on cleaning and transforming large patient scheduling datasets in <strong>PostgreSQL</strong> to identify the strongest predictors of appointment no-shows.
-              </p>
+            <p class="mt-3">
+                This project demonstrated how relatively small operational changes can produce meaningful improvements in organizational performance. The most valuable insights were those that translated directly into practical interventions capable of improving both patient experience and operational efficiency.
+            </p>
+        </div>
 
-              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
-                Analytical Approach
-              </h4>
+    </div>
 
-              <p class="mt-3">
-                Using SQL for data preparation and <strong>Tableau</strong> for visualization, I explored how factors such as appointment lead time, SMS reminders, age, neighborhood, and patient history influenced attendance behavior. The dashboard was designed to surface operational insights that healthcare organizations could use to reduce missed appointments and improve scheduling efficiency.
-              </p>
+    <!-- Right Sidebar -->
+    <div class="col-lg-4">
 
-              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
-                Key Insights
-              </h4>
+        <div class="p-4 rounded" style="background: #f0f7ff; border-left: 5px solid #007bff;">
 
-              <p class="mt-3">
-                The analysis revealed that longer scheduling lead times were strongly associated with
-                increased no-show rates, while patient history and repeat appointment behavior provided
-                meaningful indicators for future attendance risk. The anlysis also revealed a correlation
-                between SMS reminders and improved attendance. Interactive dashboard filtering allowed 
-                stakeholders to quickly identify high-risk scheduling patterns and demographic trends.
-              </p>
+            <h4 style="font-size: 1.1rem; font-weight: 700;">
+                Project Tools
+            </h4>
 
-              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
-                Recommendations
-              </h4>
-
-              <p class="mt-3">
-                Increasing SMS reminder enrollment presents a significant opportunity to reduce missed appointments. With current enrollment at 25.6%, increasing participation to 40% could potentially lower the no-show rate from 19.5% to 15%. Reducing long scheduling lead times may also improve attendance, as no-show risk increases substantially after 15 days. Additional reminder or confirmation outreach should be considered for appointments scheduled 90–180 days in advance, which demonstrated elevated no-show rates. Lastly, targeted communication strategies aimed at patients aged 18–29 may help address the highest-risk demographic for missed appointments.
-              </p>
-
-            </div>
-
-          </div>
-
-          <!-- Right Sidebar -->
-          <div class="col-lg-4">
-
-            <div class="p-4 rounded" style="background: #f0f7ff; border-left: 5px solid #007bff;">
-
-              <h4 style="font-size: 1.1rem; font-weight: 700;">
-                Project Tech Stack
-              </h4>
-
-              <ul class="list-unstyled mt-3">
+            <ul class="list-unstyled mt-3">
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Database:</strong> PostgreSQL
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Database:</strong> PostgreSQL
                 </li>
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Visualization:</strong> Tableau
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Data Analysis:</strong> SQL
                 </li>
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Version Control:</strong> GitHub
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Visualization:</strong> Tableau
                 </li>
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Tools:</strong> VS Code
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Version Control:</strong> GitHub
                 </li>
 
-              </ul>
+                <li class="mb-2">
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Tools:</strong> VS Code
+                </li>
 
-              <hr>
-
-              <!-- Replace with your actual GitHub repo -->
-              <a href="https://github.com/gregwashamjr/no-show-analysis" class="btn btn-primary w-100 mt-2">
-                View Code on GitHub
-              </a>
-
-            </div>
-
-          </div>
+            </ul>
 
         </div>
 
-      </div>
+    </div>
 
+</div>
     </section>
 
   </main>

@@ -56,7 +56,7 @@
           <li class="breadcrumb-item active">Project Details</li>
         </ol>
       </nav>
-      <h1 style="font-weight: 700;">Healthcare Efficiency & Risk Analysis</h1>
+      <h1 style="font-weight: 700;">Quality Improvement Case Study</h1>
     </div>
   </div>
 
@@ -67,103 +67,174 @@
       <div class="row text-center mb-5">
         <div class="col-lg-12">
           <h2 style="color: #007bff; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;">Project Overview</h2>
-          <h3 style="font-size: 2.5rem; margin-bottom: 20px;">Patient Readmission Risk Optimization</h3>
+          <h3 style="font-size: 2.5rem; margin-bottom: 20px;">Reducing Hospital Readmissions Through Better Discharge Management</h3>
           <p class="mx-auto" style="max-width: 800px; font-size: 1.1rem; color: #555;">
-            An analysis of 100,000+ hospital encounters to identify clinical predictors for patient readmission using PostgreSQL for data engineering and Tableau for visualization.
+             Hospital readmissions increase costs, strain healthcare resources, and can indicate opportunities to improve care transitions. This project analyzed more than 100,000 hospital encounters to identify factors associated with elevated readmission risk and recommend operational improvements that could improve patient outcomes.
           </p>
         </div>
       </div>
 
-      <!-- Main Visual -->
-      <div class="row justify-content-center mb-5">
-        <div class="col-lg-10">
-          <div class="shadow-lg rounded overflow-hidden bg-light" style="min-height: 300px; border: 1px solid #eee;">
-            <!-- Remember to add your screenshot to this path -->
-            <img src="assets/img/portfolio/diabetes-dashboard-main-V2.png" alt="Tableau Dashboard" class="img-fluid">
-            <div class="p-3 text-center text-muted small">Tableau Dashboard: Readmission Risk Factors</div>
-          </div>
-        </div>
-      </div>
-
+    
       <!-- Content Row -->
         <div class="row gy-4">
 
           <!-- Left Content -->
-          <div class="col-lg-8">
+          <div class="col">
 
             <div class="content-box p-4">
 
               <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
-                The Challenge
+                The Problem
               </h4>
 
               <p class="mt-3">
-                This data was missing about 50% of the referring specialist type data. I categorized the missing data as "other" or "Unknown" to avoid skewing the specialty benchmarking
+                Hospital readmissions create financial, operational, and patient care challenges. Reducing avoidable readmissions improves outcomes, lowers costs, and increases healthcare system efficiency.
+              </p>
+
+              <p class="mt-3">
+                The goal of this project was to identify factors associated with elevated readmission risk and uncover opportunities for intervention that healthcare organizations could realistically implement.
               </p>
 
               <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
-                Analytical Approach
+                Why It Matters
               </h4>
 
               <p class="mt-3">
-                Using Excel for data cleaning, SQL for data preparation, and <strong>Tableau</strong> for visualization, I analyzed factors contributing to increased hospital readmission rates. Areas explored included: specialist referral type, primary diagnosis, comorbidities, and medication management. After identifying key patterns and trends, I focused on controllable variables that could help reduce readmission rates and improve patient outcomes.
+                Healthcare organizations face increasing pressure to improve quality metrics while controlling costs. Understanding the drivers of readmission can help providers prioritize resources, improve discharge planning, and deliver better patient outcomes.
               </p>
 
               <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
-                Key Insights
+                Data Considerations
               </h4>
 
               <p class="mt-3">
-                The analysis revealed an overall patient readmission rate of 11.2%; however, patients diagnosed with diabetes experienced a higher readmission rate of 13.1%. That rate increased further to 15% among diabetes patients who did not receive a medication change upon discharge. Medication changes included either prescribing new diabetes medication or adjusting existing prescriptions. Another notable finding was that patients referred through Cardiology had a significantly lower readmission rate of 8%.
+                Approximately 50% of referral specialist records were missing specialty classifications. To preserve the integrity of specialty-level comparisons, missing values were categorized as "Unknown" and analyzed separately rather than excluded from the dataset.
               </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Investigation
+              </h4>
+
+              <p class="mt-3">
+                To better understand readmission risk, I evaluated patient encounters across diagnosis categories, referral specialties, comorbidities, and medication management practices.
+              </p>
+
+              <p class="mt-3">
+                The analysis focused on identifying factors associated with elevated readmission rates while prioritizing findings that could realistically be addressed through operational or clinical workflow improvements.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Key Findings
+              </h4>
+
+              <ul class="mt-3">
+                <li>Overall hospital readmission rate was 11.2%.</li>
+                <li>Patients diagnosed with diabetes experienced a higher readmission rate of 13.1%.</li>
+                <li>Diabetic patients discharged without medication changes demonstrated the highest readmission rate at 15%.</li>
+                <li>Patients referred through Cardiology demonstrated a significantly lower readmission rate of 8%.</li>
+              </ul>
 
               <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
                 Recommendations
               </h4>
 
               <p class="mt-3">
-                To reduce the 15% risk identified in the "Treatment Gap," the hospital should implement a mandatory medication review for all diabetic patients prior to discharge, specifically targeting those whose prescriptions remained unchanged during their stay. 
+                Implement a mandatory medication review process for diabetic patients prior to discharge, particularly for individuals whose medication regimens remained unchanged during hospitalization.
               </p>
+
               <p class="mt-3">
-                The hospital should also implement and evaluate Cardiology’s discharge and follow-up protocols across other clinical departments to help reduce hospital-wide readmission rates. Since Cardiology consistently achieves below-average readmission rates, even among high-risk patients, its care coordination strategies may serve as an effective model for improving outcomes in other specialties.
+                Evaluate Cardiology discharge and follow-up protocols for adoption across additional specialties. Since Cardiology consistently achieved lower readmission rates, its care coordination practices may provide a useful model for improving outcomes elsewhere in the organization.
               </p>
 
-            </div>
-
-          </div>
-          <!-- Right Sidebar -->
-          <div class="col-lg-4">
-
-            <div class="p-4 rounded" style="background: #f0f7ff; border-left: 5px solid #007bff;">
-
-              <h4 style="font-size: 1.1rem; font-weight: 700;">
-                Project Tech Stack
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Potential Impacts
               </h4>
 
-              <ul class="list-unstyled mt-3">
+              <p class="mt-3">
+                The findings suggest that targeted medication review processes and broader adoption of successful discharge practices could reduce avoidable readmissions, improve patient outcomes, and lower operational costs.
+              </p>
+
+              <h4 class="mt-5" style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                Dashboard and Supporting Visualizations
+              </h4>
+            </div>
+          </div>
+
+        
+      <!-- Main Visual -->
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-10">
+          <div class="shadow-lg rounded overflow-hidden bg-light" style="min-height: 300px; border: 1px solid #eee;">
+            <!-- Remember to add your screenshot to this path -->
+            <img src="assets/img/portfolio/diabetes-dashboard-main-V2.png" alt="Tableau Dashboard" class="img-fluid">
+            <div class="p-3 text-center text-muted small">Figure 1. Dashboard used to evaluate readmission patterns across diagnosis groups, referral specialties, and medication management practices.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gy-4">
+
+    <!-- Left Content -->
+    <div class="col-lg-8">
+
+        <div class="content-box p-4">
+
+            <h4 style="border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px;">
+                What I Learned
+            </h4>
+
+            <p class="mt-3">
+                This project reinforced the importance of focusing on actionable opportunities rather than simply identifying statistical relationships. The most valuable findings were not necessarily the strongest correlations, but the factors healthcare organizations could realistically influence through workflow improvements and discharge planning processes.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="col-lg-4">
+
+        <div class="p-4 rounded" style="background: #f0f7ff; border-left: 5px solid #007bff;">
+
+            <h4 style="font-size: 1.1rem; font-weight: 700;">
+                Project Tools
+            </h4>
+
+            <ul class="list-unstyled mt-3">
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Database:</strong> PostgreSQL
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Database:</strong> PostgreSQL
                 </li>
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Visualization:</strong> Tableau
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Data Analysis:</strong> SQL
                 </li>
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Version Control:</strong> GitHub
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Visualization:</strong> Tableau
                 </li>
 
                 <li class="mb-2">
-                  <i class="bi bi-check2-circle text-primary me-2"></i>
-                  <strong>Tools:</strong> VS Code
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Version Control:</strong> GitHub
                 </li>
 
-              </ul>     
-    </section>
+                <li class="mb-2">
+                    <i class="bi bi-check2-circle text-primary me-2"></i>
+                    <strong>Tools:</strong> VS Code
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
 </main>
 
   <footer id="footer" class="footer">
